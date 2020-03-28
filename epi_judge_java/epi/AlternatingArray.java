@@ -6,48 +6,56 @@ import epi.test_framework.TestUtils;
 import epi.test_framework.TimedExecutor;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 public class AlternatingArray {
+
   public static void rearrange(List<Integer> A) {
-    // TODO - you fill in here.
-    return;
+
+    for (int i = 1; i < A.size(); ++i) {
+      if (((i % 2) == 0 && A.get(i - 1) < A.get(i)) ||
+              ((i % 2) != 0 && A.get(i - 1) > A.get(i))) {
+        Collections.swap(A, i - 1, i);
+      }
+    }
   }
+
   private static void checkOrder(List<Integer> A) throws TestFailure {
     for (int i = 0; i < A.size(); ++i) {
       if ((i % 2) != 0) {
         if (A.get(i) < A.get(i - 1)) {
           throw new TestFailure()
-              .withProperty(TestFailure.PropertyName.RESULT, A)
-              .withMismatchInfo(
-                  i, String.format("A[%d] <= A[%d]", i - 1, i),
-                  String.format("%d > %d", A.get(i - 1), A.get(i)));
+                  .withProperty(TestFailure.PropertyName.RESULT, A)
+                  .withMismatchInfo(
+                          i, String.format("A[%d] <= A[%d]", i - 1, i),
+                          String.format("%d > %d", A.get(i - 1), A.get(i)));
         }
         if (i < A.size() - 1) {
           if (A.get(i) < A.get(i + 1)) {
             throw new TestFailure()
-                .withProperty(TestFailure.PropertyName.RESULT, A)
-                .withMismatchInfo(
-                    i, String.format("A[%d] >= A[%d]", i, i + 1),
-                    String.format("%d < %d", A.get(i), A.get(i + 1)));
+                    .withProperty(TestFailure.PropertyName.RESULT, A)
+                    .withMismatchInfo(
+                            i, String.format("A[%d] >= A[%d]", i, i + 1),
+                            String.format("%d < %d", A.get(i), A.get(i + 1)));
           }
         }
       } else {
         if (i > 0) {
           if (A.get(i - 1) < A.get(i)) {
             throw new TestFailure()
-                .withProperty(TestFailure.PropertyName.RESULT, A)
-                .withMismatchInfo(
-                    i, String.format("A[%d] >= A[%d]", i - 1, i),
-                    String.format("%d < %d", A.get(i - 1), A.get(i)));
+                    .withProperty(TestFailure.PropertyName.RESULT, A)
+                    .withMismatchInfo(
+                            i, String.format("A[%d] >= A[%d]", i - 1, i),
+                            String.format("%d < %d", A.get(i - 1), A.get(i)));
           }
         }
         if (i < A.size() - 1) {
           if (A.get(i + 1) < A.get(i)) {
             throw new TestFailure()
-                .withProperty(TestFailure.PropertyName.RESULT, A)
-                .withMismatchInfo(
-                    i, String.format("A[%d] <= A[%d]", i, i + 1),
-                    String.format("%d > %d", A.get(i), A.get(i + 1)));
+                    .withProperty(TestFailure.PropertyName.RESULT, A)
+                    .withMismatchInfo(
+                            i, String.format("A[%d] <= A[%d]", i, i + 1),
+                            String.format("%d > %d", A.get(i), A.get(i + 1)));
           }
         }
       }
@@ -56,7 +64,7 @@ public class AlternatingArray {
 
   @EpiTest(testDataFile = "alternating_array.tsv")
   public static void rearrangeWrapper(TimedExecutor executor, List<Integer> A)
-      throws Exception {
+          throws Exception {
     List<Integer> result = new ArrayList<>(A);
     executor.run(() -> rearrange(result));
 
@@ -66,9 +74,9 @@ public class AlternatingArray {
 
   public static void main(String[] args) {
     System.exit(
-        GenericTest
-            .runFromAnnotations(args, "AlternatingArray.java",
-                                new Object() {}.getClass().getEnclosingClass())
-            .ordinal());
+            GenericTest
+                    .runFromAnnotations(args, "AlternatingArray.java",
+                            new Object() {}.getClass().getEnclosingClass())
+                    .ordinal());
   }
 }
