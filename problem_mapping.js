@@ -1218,7 +1218,7 @@ problem_mapping = {
                 "total": 152
             },
             "Java: SortedArraysMerge.java": {
-                "passed": 0,
+                "passed": 152,
                 "total": 152
             },
             "Python: sorted_arrays_merge.py": {
@@ -1232,7 +1232,7 @@ problem_mapping = {
                 "total": 203
             },
             "Java: SortIncreasingDecreasingArray.java": {
-                "passed": 0,
+                "passed": 203,
                 "total": 203
             },
             "Python: sort_increasing_decreasing_array.py": {
@@ -1246,7 +1246,7 @@ problem_mapping = {
                 "total": 101
             },
             "Java: SortAlmostSortedArray.java": {
-                "passed": 0,
+                "passed": 101,
                 "total": 101
             },
             "Python: sort_almost_sorted_array.py": {
@@ -1260,7 +1260,7 @@ problem_mapping = {
                 "total": 51
             },
             "Java: KClosestStars.java": {
-                "passed": 0,
+                "passed": 51,
                 "total": 51
             },
             "Python: k_closest_stars.py": {
@@ -1274,7 +1274,7 @@ problem_mapping = {
                 "total": 55
             },
             "Java: OnlineMedian.java": {
-                "passed": 0,
+                "passed": 55,
                 "total": 55
             },
             "Python: online_median.py": {
@@ -1288,7 +1288,7 @@ problem_mapping = {
                 "total": 102
             },
             "Java: KLargestInHeap.java": {
-                "passed": 0,
+                "passed": 102,
                 "total": 102
             },
             "Python: k_largest_in_heap.py": {
