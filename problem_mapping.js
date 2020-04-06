@@ -1062,7 +1062,7 @@ problem_mapping = {
                 "total": 3849
             },
             "Java: SumRootToLeaf.java": {
-                "passed": 0,
+                "passed": 3849,
                 "total": 3849
             },
             "Python: sum_root_to_leaf.py": {
@@ -1076,7 +1076,7 @@ problem_mapping = {
                 "total": 7690
             },
             "Java: PathSum.java": {
-                "passed": 0,
+                "passed": 7690,
                 "total": 7690
             },
             "Python: path_sum.py": {
@@ -1090,7 +1090,7 @@ problem_mapping = {
                 "total": 3852
             },
             "Java: TreeInorder.java": {
-                "passed": 0,
+                "passed": 3852,
                 "total": 3852
             },
             "Python: tree_inorder.py": {
@@ -1104,7 +1104,7 @@ problem_mapping = {
                 "total": 3851
             },
             "Java: KthNodeInTree.java": {
-                "passed": 0,
+                "passed": 3851,
                 "total": 3851
             },
             "Python: kth_node_in_tree.py": {
@@ -1118,7 +1118,7 @@ problem_mapping = {
                 "total": 948
             },
             "Java: SuccessorInTree.java": {
-                "passed": 0,
+                "passed": 948,
                 "total": 948
             },
             "Python: successor_in_tree.py": {
@@ -1132,7 +1132,7 @@ problem_mapping = {
                 "total": 3852
             },
             "Java: TreeWithParentInorder.java": {
-                "passed": 0,
+                "passed": 3852,
                 "total": 3852
             },
             "Python: tree_with_parent_inorder.py": {
@@ -1146,7 +1146,7 @@ problem_mapping = {
                 "total": 3852
             },
             "Java: TreeFromPreorderInorder.java": {
-                "passed": 0,
+                "passed": 3852,
                 "total": 3852
             },
             "Python: tree_from_preorder_inorder.py": {
@@ -1160,7 +1160,7 @@ problem_mapping = {
                 "total": 3852
             },
             "Java: TreeFromPreorderWithNull.java": {
-                "passed": 0,
+                "passed": 3852,
                 "total": 3852
             },
             "Python: tree_from_preorder_with_null.py": {
@@ -1174,7 +1174,7 @@ problem_mapping = {
                 "total": 3852
             },
             "Java: TreeConnectLeaves.java": {
-                "passed": 0,
+                "passed": 3852,
                 "total": 3852
             },
             "Python: tree_connect_leaves.py": {
@@ -1188,7 +1188,7 @@ problem_mapping = {
                 "total": 3852
             },
             "Java: TreeExterior.java": {
-                "passed": 0,
+                "passed": 3852,
                 "total": 3852
             },
             "Python: tree_exterior.py": {
@@ -1202,7 +1202,7 @@ problem_mapping = {
                 "total": 10
             },
             "Java: TreeRightSibling.java": {
-                "passed": 0,
+                "passed": 10,
                 "total": 10
             },
             "Python: tree_right_sibling.py": {
