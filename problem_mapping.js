@@ -472,7 +472,7 @@ problem_mapping = {
                 "total": 10000
             },
             "Java: IsStringPalindromic.java": {
-                "passed": 0,
+                "passed": 10000,
                 "total": 10000
             },
             "Python: is_string_palindromic.py": {
@@ -486,7 +486,7 @@ problem_mapping = {
                 "total": 15002
             },
             "Java: StringIntegerInterconversion.java": {
-                "passed": 0,
+                "passed": 15002,
                 "total": 15002
             },
             "Python: string_integer_interconversion.py": {
@@ -500,7 +500,7 @@ problem_mapping = {
                 "total": 20001
             },
             "Java: ConvertBase.java": {
-                "passed": 0,
+                "passed": 20001,
                 "total": 20001
             },
             "Python: convert_base.py": {
@@ -514,7 +514,7 @@ problem_mapping = {
                 "total": 10000
             },
             "Java: SpreadsheetEncoding.java": {
-                "passed": 0,
+                "passed": 10000,
                 "total": 10000
             },
             "Python: spreadsheet_encoding.py": {
@@ -528,7 +528,7 @@ problem_mapping = {
                 "total": 501
             },
             "Java: ReplaceAndRemove.java": {
-                "passed": 0,
+                "passed": 501,
                 "total": 501
             },
             "Python: replace_and_remove.py": {
@@ -542,7 +542,7 @@ problem_mapping = {
                 "total": 305
             },
             "Java: IsStringPalindromicPunctuation.java": {
-                "passed": 0,
+                "passed": 305,
                 "total": 305
             },
             "Python: is_string_palindromic_punctuation.py": {
@@ -556,7 +556,7 @@ problem_mapping = {
                 "total": 103
             },
             "Java: ReverseWords.java": {
-                "passed": 0,
+                "passed": 103,
                 "total": 103
             },
             "Python: reverse_words.py": {
@@ -570,7 +570,7 @@ problem_mapping = {
                 "total": 40
             },
             "Java: LookAndSay.java": {
-                "passed": 0,
+                "passed": 40,
                 "total": 40
             },
             "Python: look_and_say.py": {
@@ -584,7 +584,7 @@ problem_mapping = {
                 "total": 3999
             },
             "Java: RomanToInteger.java": {
-                "passed": 0,
+                "passed": 3999,
                 "total": 3999
             },
             "Python: roman_to_integer.py": {
@@ -598,7 +598,7 @@ problem_mapping = {
                 "total": 10008
             },
             "Java: ValidIpAddresses.java": {
-                "passed": 0,
+                "passed": 10008,
                 "total": 10008
             },
             "Python: valid_ip_addresses.py": {
@@ -612,7 +612,7 @@ problem_mapping = {
                 "total": 500
             },
             "Java: SnakeString.java": {
-                "passed": 0,
+                "passed": 500,
                 "total": 500
             },
             "Python: snake_string.py": {
@@ -626,7 +626,7 @@ problem_mapping = {
                 "total": 200
             },
             "Java: RunLengthCompression.java": {
-                "passed": 0,
+                "passed": 200,
                 "total": 200
             },
             "Python: run_length_compression.py": {
@@ -640,7 +640,7 @@ problem_mapping = {
                 "total": 835
             },
             "Java: SubstringMatch.java": {
-                "passed": 0,
+                "passed": 835,
                 "total": 835
             },
             "Python: substring_match.py": {
@@ -664,7 +664,7 @@ problem_mapping = {
                 "total": 505
             },
             "Java: DeleteFromList.java": {
-                "passed": 0,
+                "passed": 457,
                 "total": 457
             },
             "Java: InsertInList.java": {
@@ -694,7 +694,7 @@ problem_mapping = {
                 "total": 501
             },
             "Java: SortedListsMerge.java": {
-                "passed": 0,
+                "passed": 501,
                 "total": 501
             },
             "Python: sorted_lists_merge.py": {
@@ -708,7 +708,7 @@ problem_mapping = {
                 "total": 210
             },
             "Java: ReverseSublist.java": {
-                "passed": 0,
+                "passed": 210,
                 "total": 210
             },
             "Python: reverse_sublist.py": {
@@ -722,7 +722,7 @@ problem_mapping = {
                 "total": 102
             },
             "Java: IsListCyclic.java": {
-                "passed": 0,
+                "passed": 102,
                 "total": 102
             },
             "Python: is_list_cyclic.py": {
@@ -736,7 +736,7 @@ problem_mapping = {
                 "total": 106
             },
             "Java: DoTerminatedListsOverlap.java": {
-                "passed": 0,
+                "passed": 106,
                 "total": 106
             },
             "Python: do_terminated_lists_overlap.py": {
@@ -750,7 +750,7 @@ problem_mapping = {
                 "total": 120
             },
             "Java: DoListsOverlap.java": {
-                "passed": 0,
+                "passed": 120,
                 "total": 120
             },
             "Python: do_lists_overlap.py": {
@@ -764,7 +764,7 @@ problem_mapping = {
                 "total": 512
             },
             "Java: DeleteNodeFromList.java": {
-                "passed": 0,
+                "passed": 512,
                 "total": 512
             },
             "Python: delete_node_from_list.py": {
@@ -778,7 +778,7 @@ problem_mapping = {
                 "total": 306
             },
             "Java: DeleteKthLastFromList.java": {
-                "passed": 0,
+                "passed": 306,
                 "total": 306
             },
             "Python: delete_kth_last_from_list.py": {
@@ -792,7 +792,7 @@ problem_mapping = {
                 "total": 203
             },
             "Java: RemoveDuplicatesFromSortedList.java": {
-                "passed": 0,
+                "passed": 203,
                 "total": 203
             },
             "Python: remove_duplicates_from_sorted_list.py": {
@@ -806,7 +806,7 @@ problem_mapping = {
                 "total": 507
             },
             "Java: ListCyclicRightShift.java": {
-                "passed": 0,
+                "passed": 507,
                 "total": 507
             },
             "Python: list_cyclic_right_shift.py": {
