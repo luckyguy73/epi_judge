@@ -10,8 +10,15 @@ import java.util.List;
 public class SearchEntryEqualToIndex {
 
     public static int searchEntryEqualToItsIndex(List<Integer> A) {
-        // TODO - you fill in here.
-        return 0;
+        int lower = 0, upper = A.size() - 1;
+        while (lower <= upper) {
+            int mid = (upper - lower) / 2 + lower;
+            int difference = mid - A.get(mid);
+            if (difference == 0) return mid;
+            else if (difference > 0) lower = mid + 1;
+            else upper = mid - 1;
+        }
+        return -1;
     }
 
     @EpiTest(testDataFile = "search_entry_equal_to_index.tsv")

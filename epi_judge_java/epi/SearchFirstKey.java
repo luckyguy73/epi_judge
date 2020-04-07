@@ -11,11 +11,10 @@ public class SearchFirstKey {
         int index = -1, lower = 0, upper = A.size() - 1, mid;
         while (lower <= upper) {
             mid = lower + (upper - lower) / 2;
-            if (A.get(mid) == k) {
-                index = mid;
+            if (A.get(mid) >= k) {
                 upper = mid - 1;
-            } else if (A.get(mid) < k) lower = mid + 1;
-            else upper = mid - 1;
+                if (A.get(mid) == k) index = mid;
+            } else lower = mid + 1;
         }
         return index;
     }
