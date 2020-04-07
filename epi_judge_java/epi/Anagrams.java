@@ -5,16 +5,23 @@ import epi.test_framework.EpiTestComparator;
 import epi.test_framework.GenericTest;
 import epi.test_framework.LexicographicalListComparator;
 
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 import java.util.function.BiPredicate;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Anagrams {
     @EpiTest(testDataFile = "anagrams.tsv")
-
-    public static List<List<String>> findAnagrams(List<String> dictionary) {
-        // TODO - you fill in here.
-        return null;
+    public static List<List<String>> findAnagrams(List<String> words) {
+        Map<String, List<String>> map = new HashMap<>();
+        for (String word : words) {
+            //    String key = Stream.of(word.split("")).sorted().collect(Collectors.joining());
+            char[] c = word.toCharArray();
+            Arrays.sort(c);
+            String key = String.valueOf(c);
+            map.computeIfAbsent(key, k -> new ArrayList<>()).add(word);
+        }
+        return map.values().stream().filter(group -> group.size() >= 2).collect(Collectors.toList());
     }
 
     @EpiTestComparator
