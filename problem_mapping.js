@@ -1616,7 +1616,7 @@ problem_mapping = {
                 "total": 202
             },
             "Java: IntersectSortedArrays.java": {
-                "passed": 0,
+                "passed": 202,
                 "total": 202
             },
             "Python: intersect_sorted_arrays.py": {
@@ -1630,7 +1630,7 @@ problem_mapping = {
                 "total": 201
             },
             "Java: TwoSortedArraysMerge.java": {
-                "passed": 0,
+                "passed": 201,
                 "total": 201
             },
             "Python: two_sorted_arrays_merge.py": {
@@ -1644,7 +1644,7 @@ problem_mapping = {
                 "total": 1001
             },
             "Java: HIndex.java": {
-                "passed": 0,
+                "passed": 1001,
                 "total": 1001
             },
             "Python: h_index.py": {
@@ -1658,7 +1658,7 @@ problem_mapping = {
                 "total": 202
             },
             "Java: RemoveDuplicates.java": {
-                "passed": 0,
+                "passed": 202,
                 "total": 202
             },
             "Python: remove_duplicates.py": {
@@ -1672,7 +1672,7 @@ problem_mapping = {
                 "total": 308
             },
             "Java: SmallestNonconstructibleValue.java": {
-                "passed": 0,
+                "passed": 308,
                 "total": 308
             },
             "Python: smallest_nonconstructible_value.py": {
@@ -1686,7 +1686,7 @@ problem_mapping = {
                 "total": 97
             },
             "Java: CalendarRendering.java": {
-                "passed": 0,
+                "passed": 97,
                 "total": 97
             },
             "Python: calendar_rendering.py": {
@@ -1700,7 +1700,7 @@ problem_mapping = {
                 "total": 103
             },
             "Java: IntervalAdd.java": {
-                "passed": 0,
+                "passed": 103,
                 "total": 103
             },
             "Python: interval_add.py": {
@@ -1714,7 +1714,7 @@ problem_mapping = {
                 "total": 191
             },
             "Java: IntervalsUnion.java": {
-                "passed": 0,
+                "passed": 191,
                 "total": 191
             },
             "Python: intervals_union.py": {
@@ -1728,7 +1728,7 @@ problem_mapping = {
                 "total": 33
             },
             "Java: GroupEqualEntries.java": {
-                "passed": 0,
+                "passed": 33,
                 "total": 33
             },
             "Python: group_equal_entries.py": {
@@ -1742,7 +1742,7 @@ problem_mapping = {
                 "total": 105
             },
             "Java: IsArrayDominated.java": {
-                "passed": 0,
+                "passed": 105,
                 "total": 105
             },
             "Python: is_array_dominated.py": {
@@ -1756,7 +1756,7 @@ problem_mapping = {
                 "total": 209
             },
             "Java: SortList.java": {
-                "passed": 0,
+                "passed": 209,
                 "total": 209
             },
             "Python: sort_list.py": {
@@ -1770,7 +1770,7 @@ problem_mapping = {
                 "total": 1005
             },
             "Java: FindSalaryThreshold.java": {
-                "passed": 0,
+                "passed": 1005,
                 "total": 1005
             },
             "Python: find_salary_threshold.py": {
@@ -1786,7 +1786,7 @@ problem_mapping = {
                 "total": 955
             },
             "Java: SearchInBst.java": {
-                "passed": 0,
+                "passed": 955,
                 "total": 955
             },
             "Python: search_in_bst.py": {
@@ -1800,7 +1800,7 @@ problem_mapping = {
                 "total": 3139
             },
             "Java: IsTreeABst.java": {
-                "passed": 0,
+                "passed": 3139,
                 "total": 3139
             },
             "Python: is_tree_a_bst.py": {
@@ -1814,7 +1814,7 @@ problem_mapping = {
                 "total": 949
             },
             "Java: SearchFirstGreaterValueInBst.java": {
-                "passed": 0,
+                "passed": 949,
                 "total": 949
             },
             "Python: search_first_greater_value_in_bst.py": {
@@ -1828,7 +1828,7 @@ problem_mapping = {
                 "total": 949
             },
             "Java: KLargestValuesInBst.java": {
-                "passed": 0,
+                "passed": 949,
                 "total": 949
             },
             "Python: k_largest_values_in_bst.py": {
@@ -1842,7 +1842,7 @@ problem_mapping = {
                 "total": 951
             },
             "Java: LowestCommonAncestorInBst.java": {
-                "passed": 0,
+                "passed": 951,
                 "total": 951
             },
             "Python: lowest_common_ancestor_in_bst.py": {
@@ -1856,7 +1856,7 @@ problem_mapping = {
                 "total": 950
             },
             "Java: BstFromPreorder.java": {
-                "passed": 0,
+                "passed": 950,
                 "total": 950
             },
             "Python: bst_from_preorder.py": {
@@ -1870,7 +1870,7 @@ problem_mapping = {
                 "total": 51
             },
             "Java: MinimumDistance3SortedArrays.java": {
-                "passed": 0,
+                "passed": 51,
                 "total": 51
             },
             "Python: minimum_distance_3_sorted_arrays.py": {
@@ -1884,7 +1884,7 @@ problem_mapping = {
                 "total": 13
             },
             "Java: ABSqrt2.java": {
-                "passed": 0,
+                "passed": 13,
                 "total": 13
             },
             "Python: a_b_sqrt2.py": {
@@ -1898,7 +1898,7 @@ problem_mapping = {
                 "total": 87
             },
             "Java: BstFromSortedArray.java": {
-                "passed": 0,
+                "passed": 87,
                 "total": 87
             },
             "Python: bst_from_sorted_array.py": {
@@ -1912,7 +1912,7 @@ problem_mapping = {
                 "total": 958
             },
             "Java: DescendantAndAncestorInBst.java": {
-                "passed": 0,
+                "passed": 958,
                 "total": 958
             },
             "Python: descendant_and_ancestor_in_bst.py": {
@@ -1926,7 +1926,7 @@ problem_mapping = {
                 "total": 954
             },
             "Java: RangeLookupInBst.java": {
-                "passed": 0,
+                "passed": 954,
                 "total": 954
             },
             "Python: range_lookup_in_bst.py": {
@@ -1940,7 +1940,7 @@ problem_mapping = {
                 "total": 201
             },
             "Java: AddingCredits.java": {
-                "passed": 0,
+                "passed": 201,
                 "total": 201
             },
             "Python: adding_credits.py": {
@@ -1956,7 +1956,7 @@ problem_mapping = {
                 "total": 10034
             },
             "Java: EuclideanGcd.java": {
-                "passed": 0,
+                "passed": 10034,
                 "total": 10034
             },
             "Python: euclidean_gcd.py": {
@@ -1970,7 +1970,7 @@ problem_mapping = {
                 "total": 10
             },
             "Java: Hanoi.java": {
-                "passed": 0,
+                "passed": 10,
                 "total": 10
             },
             "Python: hanoi.py": {

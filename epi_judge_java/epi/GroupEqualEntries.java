@@ -6,6 +6,7 @@ import epi.test_framework.GenericTest;
 import epi.test_framework.TestFailure;
 import epi.test_framework.TimedExecutor;
 
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -47,8 +48,32 @@ public class GroupEqualEntries {
     }
 
     public static void groupByAge(List<Person> people) {
-        // TODO - you fill in here.
-        return;
+        Map<Integer, Integer> ageToCount = new HashMap<>();
+        for (Person p : people) {
+            ageToCount.put(p.age, ageToCount.getOrDefault(p.age, 0) + 1);
+        }
+        Map<Integer, Integer> ageToOffset = new HashMap<>();
+        int offset = 0;
+        for (Map.Entry<Integer, Integer> kc : ageToCount.entrySet()) {
+            ageToOffset.put(kc.getKey(), offset);
+            offset += kc.getValue();
+        }
+
+        while (!ageToOffset.isEmpty()) {
+            Map.Entry<Integer, Integer> from =
+                    ageToOffset.entrySet().iterator().next();
+            Integer toAge = people.get(from.getValue()).age;
+            Integer toValue = ageToOffset.get(toAge);
+            Collections.swap(people, from.getValue(), toValue);
+            // Use ageToCount to see when we are finished with a particular age.
+            Integer count = ageToCount.get(toAge) - 1;
+            ageToCount.put(toAge, count);
+            if (count > 0) {
+                ageToOffset.put(toAge, toValue + 1);
+            } else {
+                ageToOffset.remove(toAge);
+            }
+        }
     }
 
     private static Map<Person, Integer> buildMultiset(List<Person> people) {

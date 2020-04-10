@@ -24,13 +24,23 @@ class Team {
 
     public Team(List<Integer> height) {
         players =
-                height.stream().map(h -> new Player(h)).collect(Collectors.toList());
+                height.stream().map(Player::new).collect(Collectors.toList());
     }
 
     // Checks if team0 can be placed in front of team1.
     public static boolean validPlacementExists(Team team0, Team team1) {
-        // TODO - you fill in here.
+        List<Player> team0Sorted = team0.sortPlayersByHeight();
+        List<Player> team1Sorted = team1.sortPlayersByHeight();
+        for (int i = 0; i < team0Sorted.size() && i < team1Sorted.size(); ++i) {
+            if (team0Sorted.get(i).compareTo(team1Sorted.get(i)) >= 0) {
+                return false;
+            }
+        }
         return true;
+    }
+
+    private List<Player> sortPlayersByHeight() {
+        return players.stream().sorted().collect(Collectors.toList());
     }
 
     private List<Player> players;

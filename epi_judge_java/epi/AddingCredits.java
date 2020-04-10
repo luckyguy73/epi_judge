@@ -5,45 +5,64 @@ import epi.test_framework.EpiUserType;
 import epi.test_framework.GenericTest;
 import epi.test_framework.TestFailure;
 
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
+import java.util.NavigableMap;
+import java.util.Set;
+import java.util.TreeMap;
 
 public class AddingCredits {
 
     public static class ClientsCreditsInfo {
+
+        private int offset = 0;
+        private Map<String, Integer> clientToCredit = new HashMap<>();
+        private NavigableMap<Integer, Set<String>> creditToClients = new TreeMap<>();
+
         public void insert(String clientID, int c) {
-            // TODO - you fill in here.
-            return;
+            remove(clientID);
+            clientToCredit.put(clientID, c - offset);
+            creditToClients.putIfAbsent(c - offset, new HashSet<>());
+            Set<String> set = creditToClients.get(c - offset);
+            set.add(clientID);
         }
 
         public boolean remove(String clientID) {
-            // TODO - you fill in here.
-            return true;
+            Integer clientCredit = clientToCredit.get(clientID);
+            if (clientCredit != null) {
+                creditToClients.get(clientCredit).remove(clientID);
+                if (creditToClients.get(clientCredit).isEmpty()) creditToClients.remove(clientCredit);
+                clientToCredit.remove(clientID);
+                return true;
+            }
+            return false;
         }
 
         public int lookup(String clientID) {
-            // TODO - you fill in here.
-            return 0;
+            Integer clientCredit = clientToCredit.get(clientID);
+            return clientCredit == null ? -1 : clientCredit + offset;
         }
 
         public void addAll(int C) {
-            // TODO - you fill in here.
-            return;
+            offset += C;
         }
 
         public String max() {
-            // TODO - you fill in here.
-            return "";
+            return creditToClients.isEmpty() ? "" : creditToClients.lastEntry().getValue().iterator().next();
         }
 
         @Override
         public String toString() {
-            // TODO - you fill in here.
-            return super.toString();
+            return "{clientToCredit=" + clientToCredit + '}';
         }
+
     }
 
     @EpiUserType(ctorParams = {String.class, String.class, int.class})
     public static class Operation {
+
         public String op;
         public String sArg;
         public int iArg;
@@ -56,21 +75,11 @@ public class AddingCredits {
 
         @Override
         public boolean equals(Object o) {
-            if (this == o) {
-                return true;
-            }
-            if (o == null || getClass() != o.getClass()) {
-                return false;
-            }
-
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
             Operation operation = (Operation) o;
-
-            if (iArg != operation.iArg) {
-                return false;
-            }
-            if (!op.equals(operation.op)) {
-                return false;
-            }
+            if (iArg != operation.iArg) return false;
+            if (!op.equals(operation.op)) return false;
             return sArg.equals(operation.sArg);
         }
 
@@ -86,11 +95,11 @@ public class AddingCredits {
         public String toString() {
             return String.format("%s(%s, %d)", op, sArg, iArg);
         }
+
     }
 
     @EpiTest(testDataFile = "adding_credits.tsv")
-    public static void ClientsCreditsInfoTester(List<Operation> ops)
-            throws TestFailure {
+    public static void ClientsCreditsInfoTester(List<Operation> ops) throws TestFailure {
         ClientsCreditsInfo cr = new ClientsCreditsInfo();
         int opIdx = 0;
         for (Operation x : ops) {
@@ -102,12 +111,8 @@ public class AddingCredits {
                     break;
                 case "remove":
                     result = cr.remove(sArg) ? 1 : 0;
-                    if (result != iArg) {
-                        throw new TestFailure()
-                                .withProperty(TestFailure.PropertyName.STATE, cr)
-                                .withProperty(TestFailure.PropertyName.COMMAND, x)
-                                .withMismatchInfo(opIdx, iArg, result);
-                    }
+                    if (result != iArg)
+                        throw new TestFailure().withProperty(TestFailure.PropertyName.STATE, cr).withProperty(TestFailure.PropertyName.COMMAND, x).withMismatchInfo(opIdx, iArg, result);
                     break;
                 case "insert":
                     cr.insert(sArg, iArg);
@@ -117,23 +122,16 @@ public class AddingCredits {
                     break;
                 case "lookup":
                     result = cr.lookup(sArg);
-                    if (result != iArg) {
-                        throw new TestFailure()
-                                .withProperty(TestFailure.PropertyName.STATE, cr)
-                                .withProperty(TestFailure.PropertyName.COMMAND, x)
-                                .withMismatchInfo(opIdx, iArg, result);
-                    }
+                    if (result != iArg)
+                        throw new TestFailure().withProperty(TestFailure.PropertyName.STATE, cr).withProperty(TestFailure.PropertyName.COMMAND, x).withMismatchInfo(opIdx, iArg, result);
             }
             opIdx++;
         }
     }
 
     public static void main(String[] args) {
-        System.exit(
-                GenericTest
-                        .runFromAnnotations(args, "AddingCredits.java",
-                                new Object() {
-                                }.getClass().getEnclosingClass())
-                        .ordinal());
+        System.exit(GenericTest.runFromAnnotations(args, "AddingCredits.java", new Object() {
+        }.getClass().getEnclosingClass()).ordinal());
     }
+
 }

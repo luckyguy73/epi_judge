@@ -24,13 +24,13 @@ public class RemoveDuplicates {
 
         @Override
         public boolean equals(Object obj) {
-            if (obj == null || !(obj instanceof Name)) {
+            if (!(obj instanceof Name)) {
                 return false;
             }
             if (this == obj) {
                 return true;
             }
-            Name name = (Name) obj;
+            Name name = (Name)obj;
             return firstName.equals(name.firstName) && lastName.equals(name.lastName);
         }
 
@@ -50,8 +50,12 @@ public class RemoveDuplicates {
     }
 
     public static void eliminateDuplicate(List<Name> names) {
-        // TODO - you fill in here.
-        return;
+        Collections.sort(names);
+        int writeIdx = 0;
+        for (int i = 1; i < names.size(); i++)
+            if (!names.get(i).firstName.equals(names.get(writeIdx).firstName))
+                names.set(++writeIdx, names.get(i));
+        names.subList(++writeIdx, names.size()).clear();
     }
 
     @EpiTest(testDataFile = "remove_duplicates.tsv")
@@ -78,15 +82,13 @@ public class RemoveDuplicates {
         return true;
     }
 
-    @EpiTestExpectedType
-    public static List<String> expectedType;
+    @EpiTestExpectedType public static List<String> expectedType;
 
     public static void main(String[] args) {
         System.exit(
                 GenericTest
                         .runFromAnnotations(args, "RemoveDuplicates.java",
-                                new Object() {
-                                }.getClass().getEnclosingClass())
+                                new Object() {}.getClass().getEnclosingClass())
                         .ordinal());
     }
 }
