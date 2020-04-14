@@ -6,16 +6,22 @@ import epi.test_framework.LexicographicalListComparator;
 import epi.test_framework.TimedExecutor;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Stack;
 
 public class EnumerateTrees {
 
-    public static List<BinaryTreeNode<Integer>>
-    generateAllBinaryTrees(int numNodes) {
-        // TODO - you fill in here.
-        return Collections.emptyList();
+    public static List<BinaryTreeNode<Integer>> generateAllBinaryTrees(int numNodes) {
+        List<BinaryTreeNode<Integer>> result = new ArrayList<>();
+        if (numNodes == 0) result.add(null);
+        for (int numLeftTreeNodes = 0; numLeftTreeNodes < numNodes; ++numLeftTreeNodes) {
+            int numRightTreeNodes = numNodes - 1 - numLeftTreeNodes;
+            List<BinaryTreeNode<Integer>> leftSubtrees = generateAllBinaryTrees(numLeftTreeNodes);
+            List<BinaryTreeNode<Integer>> rightSubtrees = generateAllBinaryTrees(numRightTreeNodes);
+            for (BinaryTreeNode<Integer> left : leftSubtrees)
+                for (BinaryTreeNode<Integer> right : rightSubtrees) result.add(new BinaryTreeNode<>(0, left, right));
+        }
+        return result;
     }
 
     public static List<Integer> serializeStructure(BinaryTreeNode<Integer> tree) {
@@ -34,26 +40,17 @@ public class EnumerateTrees {
     }
 
     @EpiTest(testDataFile = "enumerate_trees.tsv")
-    public static List<List<Integer>>
-    generateAllBinaryTreesWrapper(TimedExecutor executor, int numNodes)
-            throws Exception {
-        List<BinaryTreeNode<Integer>> result =
-                executor.run(() -> generateAllBinaryTrees(numNodes));
-
+    public static List<List<Integer>> generateAllBinaryTreesWrapper(TimedExecutor executor, int numNodes) throws Exception {
+        List<BinaryTreeNode<Integer>> result = executor.run(() -> generateAllBinaryTrees(numNodes));
         List<List<Integer>> serialized = new ArrayList<>();
-        for (BinaryTreeNode<Integer> x : result) {
-            serialized.add(serializeStructure(x));
-        }
+        for (BinaryTreeNode<Integer> x : result) serialized.add(serializeStructure(x));
         serialized.sort(new LexicographicalListComparator<>());
         return serialized;
     }
 
     public static void main(String[] args) {
-        System.exit(
-                GenericTest
-                        .runFromAnnotations(args, "EnumerateTrees.java",
-                                new Object() {
-                                }.getClass().getEnclosingClass())
-                        .ordinal());
+        System.exit(GenericTest.runFromAnnotations(args, "EnumerateTrees.java", new Object() {
+        }.getClass().getEnclosingClass()).ordinal());
     }
+
 }

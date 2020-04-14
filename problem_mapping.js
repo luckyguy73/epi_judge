@@ -1984,7 +1984,7 @@ problem_mapping = {
                 "total": 102
             },
             "Java: PhoneNumberMnemonic.java": {
-                "passed": 0,
+                "passed": 102,
                 "total": 102
             },
             "Python: phone_number_mnemonic.py": {
@@ -1998,7 +1998,7 @@ problem_mapping = {
                 "total": 10
             },
             "Java: NQueens.java": {
-                "passed": 0,
+                "passed": 10,
                 "total": 10
             },
             "Python: n_queens.py": {
@@ -2012,7 +2012,7 @@ problem_mapping = {
                 "total": 8
             },
             "Java: Permutations.java": {
-                "passed": 0,
+                "passed": 8,
                 "total": 8
             },
             "Python: permutations.py": {
@@ -2026,7 +2026,7 @@ problem_mapping = {
                 "total": 15
             },
             "Java: PowerSet.java": {
-                "passed": 0,
+                "passed": 15,
                 "total": 15
             },
             "Python: power_set.py": {
@@ -2040,7 +2040,7 @@ problem_mapping = {
                 "total": 120
             },
             "Java: Combinations.java": {
-                "passed": 0,
+                "passed": 120,
                 "total": 120
             },
             "Python: combinations.py": {
@@ -2054,7 +2054,7 @@ problem_mapping = {
                 "total": 11
             },
             "Java: EnumerateBalancedParentheses.java": {
-                "passed": 0,
+                "passed": 11,
                 "total": 11
             },
             "Python: enumerate_balanced_parentheses.py": {
@@ -2068,7 +2068,7 @@ problem_mapping = {
                 "total": 522
             },
             "Java: EnumeratePalindromicDecompositions.java": {
-                "passed": 0,
+                "passed": 522,
                 "total": 522
             },
             "Python: enumerate_palindromic_decompositions.py": {
@@ -2082,7 +2082,7 @@ problem_mapping = {
                 "total": 10
             },
             "Java: EnumerateTrees.java": {
-                "passed": 0,
+                "passed": 10,
                 "total": 10
             },
             "Python: enumerate_trees.py": {
@@ -2096,7 +2096,7 @@ problem_mapping = {
                 "total": 400
             },
             "Java: SudokuSolve.java": {
-                "passed": 0,
+                "passed": 400,
                 "total": 400
             },
             "Python: sudoku_solve.py": {
@@ -2110,7 +2110,7 @@ problem_mapping = {
                 "total": 10
             },
             "Java: GrayCode.java": {
-                "passed": 0,
+                "passed": 10,
                 "total": 10
             },
             "Python: gray_code.py": {
