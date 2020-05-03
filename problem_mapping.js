@@ -2130,7 +2130,7 @@ problem_mapping = {
                 "total": 1001
             },
             "Java: Fibonacci.java": {
-                "passed": 0,
+                "passed": 46,
                 "total": 46
             },
             "Java: MaxSumSubarray.java": {
@@ -2152,7 +2152,7 @@ problem_mapping = {
                 "total": 1003
             },
             "Java: NumberOfScoreCombinations.java": {
-                "passed": 0,
+                "passed": 1003,
                 "total": 1003
             },
             "Python: number_of_score_combinations.py": {
@@ -2166,7 +2166,7 @@ problem_mapping = {
                 "total": 100
             },
             "Java: LevenshteinDistance.java": {
-                "passed": 0,
+                "passed": 100,
                 "total": 100
             },
             "Python: levenshtein_distance.py": {
