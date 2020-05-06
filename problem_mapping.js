@@ -2180,7 +2180,7 @@ problem_mapping = {
                 "total": 1775
             },
             "Java: NumberOfTraversalsMatrix.java": {
-                "passed": 0,
+                "passed": 1775,
                 "total": 1775
             },
             "Python: number_of_traversals_matrix.py": {
@@ -2194,7 +2194,7 @@ problem_mapping = {
                 "total": 5906
             },
             "Java: BinomialCoefficients.java": {
-                "passed": 0,
+                "passed": 5906,
                 "total": 5906
             },
             "Python: binomial_coefficients.py": {
@@ -2208,7 +2208,7 @@ problem_mapping = {
                 "total": 186
             },
             "Java: IsStringInMatrix.java": {
-                "passed": 0,
+                "passed": 186,
                 "total": 186
             },
             "Python: is_string_in_matrix.py": {
@@ -2222,7 +2222,7 @@ problem_mapping = {
                 "total": 100
             },
             "Java: Knapsack.java": {
-                "passed": 0,
+                "passed": 100,
                 "total": 100
             },
             "Python: knapsack.py": {
@@ -2236,7 +2236,7 @@ problem_mapping = {
                 "total": 41
             },
             "Java: IsStringDecomposableIntoWords.java": {
-                "passed": 0,
+                "passed": 41,
                 "total": 41
             },
             "Python: is_string_decomposable_into_words.py": {
@@ -2250,7 +2250,7 @@ problem_mapping = {
                 "total": 101
             },
             "Java: MinimumWeightPathInATriangle.java": {
-                "passed": 0,
+                "passed": 101,
                 "total": 101
             },
             "Python: minimum_weight_path_in_a_triangle.py": {
@@ -2264,7 +2264,7 @@ problem_mapping = {
                 "total": 162
             },
             "Java: PickingUpCoins.java": {
-                "passed": 0,
+                "passed": 162,
                 "total": 162
             },
             "Python: picking_up_coins.py": {
@@ -2278,7 +2278,7 @@ problem_mapping = {
                 "total": 546
             },
             "Java: NumberOfTraversalsStaircase.java": {
-                "passed": 0,
+                "passed": 546,
                 "total": 546
             },
             "Python: number_of_traversals_staircase.py": {
@@ -2292,7 +2292,7 @@ problem_mapping = {
                 "total": 102
             },
             "Java: PrettyPrinting.java": {
-                "passed": 0,
+                "passed": 102,
                 "total": 102
             },
             "Python: pretty_printing.py": {
@@ -2306,7 +2306,7 @@ problem_mapping = {
                 "total": 200
             },
             "Java: LongestNondecreasingSubsequence.java": {
-                "passed": 0,
+                "passed": 200,
                 "total": 200
             },
             "Python: longest_nondecreasing_subsequence.py": {
@@ -2322,7 +2322,7 @@ problem_mapping = {
                 "total": 49999
             },
             "Java: MakingChange.java": {
-                "passed": 0,
+                "passed": 49999,
                 "total": 49999
             },
             "Python: making_change.py": {
@@ -2336,7 +2336,7 @@ problem_mapping = {
                 "total": 500
             },
             "Java: TaskPairing.java": {
-                "passed": 0,
+                "passed": 500,
                 "total": 500
             },
             "Python: task_pairing.py": {
