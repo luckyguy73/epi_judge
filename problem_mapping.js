@@ -2350,7 +2350,7 @@ problem_mapping = {
                 "total": 501
             },
             "Java: MinimumWaitingTime.java": {
-                "passed": 0,
+                "passed": 501,
                 "total": 501
             },
             "Python: minimum_waiting_time.py": {
@@ -2368,11 +2368,11 @@ problem_mapping = {
                 "total": 1005
             },
             "Java: MinimumPointsCoveringIntervals.java": {
-                "passed": 0,
+                "passed": 103,
                 "total": 103
             },
             "Java: TwoSum.java": {
-                "passed": 0,
+                "passed": 1005,
                 "total": 1005
             },
             "Python: minimum_points_covering_intervals.py": {
@@ -2390,7 +2390,7 @@ problem_mapping = {
                 "total": 1008
             },
             "Java: ThreeSum.java": {
-                "passed": 0,
+                "passed": 1008,
                 "total": 1008
             },
             "Python: three_sum.py": {
@@ -2404,7 +2404,7 @@ problem_mapping = {
                 "total": 201
             },
             "Java: MajorityElement.java": {
-                "passed": 0,
+                "passed": 201,
                 "total": 201
             },
             "Python: majority_element.py": {
@@ -2418,7 +2418,7 @@ problem_mapping = {
                 "total": 202
             },
             "Java: RefuelingSchedule.java": {
-                "passed": 0,
+                "passed": 202,
                 "total": 202
             },
             "Python: refueling_schedule.py": {
@@ -2432,7 +2432,7 @@ problem_mapping = {
                 "total": 204
             },
             "Java: MaxTrappedWater.java": {
-                "passed": 0,
+                "passed": 204,
                 "total": 204
             },
             "Python: max_trapped_water.py": {
@@ -2446,7 +2446,7 @@ problem_mapping = {
                 "total": 1004
             },
             "Java: LargestRectangleUnderSkyline.java": {
-                "passed": 0,
+                "passed": 1004,
                 "total": 1004
             },
             "Python: largest_rectangle_under_skyline.py": {

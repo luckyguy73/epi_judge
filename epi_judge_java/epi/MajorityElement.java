@@ -9,8 +9,17 @@ import java.util.List;
 public class MajorityElement {
 
     public static String majoritySearch(Iterator<String> stream) {
-        // TODO - you fill in here.
-        return "";
+        String candidate = "";
+        int candidateCount = 0;
+        while (stream.hasNext()) {
+            String it = stream.next();
+            if (candidateCount == 0) {
+                candidate = it;
+                candidateCount = 1;
+            } else if (candidate.equals(it)) ++candidateCount;
+            else --candidateCount;
+        }
+        return candidate;
     }
 
     @EpiTest(testDataFile = "majority_element.tsv")
@@ -19,11 +28,8 @@ public class MajorityElement {
     }
 
     public static void main(String[] args) {
-        System.exit(
-                GenericTest
-                        .runFromAnnotations(args, "MajorityElement.java",
-                                new Object() {
-                                }.getClass().getEnclosingClass())
-                        .ordinal());
+        System.exit(GenericTest.runFromAnnotations(args, "MajorityElement.java", new Object() {
+        }.getClass().getEnclosingClass()).ordinal());
     }
+
 }
